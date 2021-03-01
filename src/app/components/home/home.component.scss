@@ -1,0 +1,289 @@
+// Smarthphone (smaller than 640px)
+.grid-container {
+
+    display: grid;
+    grid-template-areas: 
+    'a'
+    'c'
+    'b';
+    grid-template-rows: minmax(30%, 30%) minmax(25%, 25%) minmax(45%, 45%);
+    grid-template-columns: 100%;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    background-image: url('https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2019/05/HubbleLegacyField.jpg?width=1200&enable=upscale');
+    
+}
+
+.section-1 {
+    grid-area: a;
+    text-align: center;
+    align-self: center;
+    .title-page {
+        color: #B63BF3; 
+        font-family: sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .name-file {
+        color: #B63BF3; 
+        font-weight: bold;
+        text-align-last: center;
+    }
+}
+
+.section-2 {
+    grid-area: b;
+    height: auto;
+    overflow: scroll;
+    .data-repeated{
+        font-weight: bold;
+        background-color: black;
+    }
+    .data-repeated-mail-invalid {
+        color: #B63BF3;  
+        font-weight: bold; 
+        background-color: black;
+    }
+    .column-repeated-mail-invalid {
+        font-weight: bold;
+        color: #B63BF3; 
+        background-color: #2F2F2F;
+    }
+    .column-repeated {
+        background-color: cornflowerblue;
+    }
+    .email-invalid {
+        color: #B63BF3;
+    }
+}
+
+.section-3 {
+    grid-area: c;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid;
+    .filters-table {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(4, 25%);
+        border: 1px solid blue;
+        background-color: white;
+        .filter-1 {
+            padding: 1em 1em 0em 1em;
+            display: flex;
+            align-items: center;
+        }
+        .filter-2 {
+            padding: 0em 1em 0em 1em;
+            display: flex;
+            align-items: center;
+        }
+        .filter-3 {
+            padding: 0em 1em 0em 1em;
+            display: flex;
+            align-items: center;
+        }
+        .button-apply {
+            padding: 0em 1em 1em 1em;
+            text-align: center;
+            align-self: center;
+        }
+    }
+}
+
+// Tablet (641px to 1007px)
+@media only screen and (min-width: 641px) {
+    .grid-container {
+
+        display: grid;
+        grid-template-areas: 
+        'a a'
+        'b c';
+        grid-template-rows: minmax(20%, 20%) minmax(80%, 80%);
+        grid-template-columns: minmax(70%, 70%) minmax(30%, 30%);
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    
+        background-image: url('https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2019/05/HubbleLegacyField.jpg?width=1200&enable=upscale');
+        
+    }
+    
+    .section-1 {
+        grid-area: a;
+        text-align: center;
+        align-self: center;
+        .title-page {
+            color: #B63BF3; 
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .name-file {
+            color: #B63BF3; 
+            font-weight: bold;
+        }
+    }
+    
+    .section-2 {
+        grid-area: b;
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        .data-repeated{
+            font-weight: bold;
+            background-color: black;
+        }
+        .data-repeated-mail-invalid {
+            color: #B63BF3;  
+            font-weight: bold; 
+            background-color: black;
+        }
+        .column-repeated-mail-invalid {
+            font-weight: bold;
+            color: #B63BF3; 
+            background-color: #2F2F2F;
+        }
+        .column-repeated {
+            background-color: cornflowerblue;
+        }
+        .email-invalid {
+            color: #B63BF3;
+        }
+    }
+    
+    .section-3 {
+        grid-area: c;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid;
+        .filters-table {
+            width: 100%;
+            height: 50%;
+            display: grid;
+            grid-template-rows: repeat(4, 25%);
+            border: 1px solid blue;
+            background-color: white;
+            .filter-1 {
+                padding: 1em 1em 0em 1em;
+                display: flex;
+                align-items: center;
+            }
+            .filter-2 {
+                padding: 0em 1em 0em 1em;
+                display: flex;
+                align-items: center;
+            }
+            .filter-3 {
+                padding: 0em 1em 0em 1em;
+                display: flex;
+                align-items: center;
+            }
+            .button-apply {
+                padding: 0em 1em 1em 1em;
+                text-align: center;
+                align-self: center;
+            }
+        }
+    }
+}
+
+// Desktop (1008px and larger)
+@media only screen and (min-width: 1008px) {
+    .grid-container {
+
+        display: grid;
+        grid-template-areas: 
+        'a a'
+        'b c';
+        grid-template-rows: minmax(20%, 20%) minmax(80%, 80%);
+        grid-template-columns: minmax(70%, 70%) minmax(30%, 30%);
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    
+        background-image: url('https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2019/05/HubbleLegacyField.jpg?width=1200&enable=upscale');
+        
+    }
+    
+    .section-1 {
+        grid-area: a;
+        text-align: center;
+        align-self: center;
+        .title-page {
+            color: #B63BF3; 
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .name-file {
+            color: #B63BF3; 
+            font-weight: bold;
+        }
+    }
+    
+    .section-2 {
+        grid-area: b;
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        .data-repeated{
+            font-weight: bold;
+            background-color: black;
+        }
+        .data-repeated-mail-invalid {
+            color: #B63BF3;  
+            font-weight: bold; 
+            background-color: black;
+        }
+        .column-repeated-mail-invalid {
+            font-weight: bold;
+            color: #B63BF3; 
+            background-color: #2F2F2F;
+        }
+        .column-repeated {
+            background-color: cornflowerblue;
+        }
+        .email-invalid {
+            color: #B63BF3;
+        }
+    }
+    
+    .section-3 {
+        grid-area: c;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid;
+        .filters-table {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-rows: repeat(4, 25%);
+            border: 1px solid blue;
+            background-color: white;
+            .filter-1 {
+                padding: 1em 1em 0em 1em;
+                display: flex;
+                align-items: center;
+            }
+            .filter-2 {
+                padding: 0em 1em 0em 1em;
+                display: flex;
+                align-items: center;
+            }
+            .filter-3 {
+                padding: 0em 1em 0em 1em;
+                display: flex;
+                align-items: center;
+            }
+            .button-apply {
+                padding: 0em 1em 1em 1em;
+                text-align: center;
+                align-self: center;
+            }
+        }
+    }
+}
